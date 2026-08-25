@@ -1,0 +1,28 @@
+@import 'default_theme';
+
+// sajo include zone (don't delete anything below)
+// #SajoPartials
+@import "./partials/single-product/product-detail";
+@import "./partials/globals/blog-conent";
+@import "./partials/shop/products-list";
+@import "./partials/shop/grouped-products";
+@import "./partials/shop/banner-shop";
+@import "./partials/globals/faqs-content";
+@import "./partials/about/contact";
+@import "./partials/about/about";
+@import "./partials/home/instagram";
+@import "./partials/home/blog-and-podcast";
+@import "./partials/home/products-list";
+@import "./partials/home/after-banner";
+@import "./partials/home/hero-banner";
+@import "./partials/globals/footer";
+@import "./partials/globals/header";
+
+// #SajoTemplates
+@import "./templates/single-guide-template";
+@import "./templates/blog-page-template";
+@import "./templates/astrological-chart-template";
+@import "./templates/shop-page-template";
+@import "./templates/fqas-template";
+@import "./templates/about-us-template";
+@import "./templates/diaconsol-template";

@@ -1,0 +1,77 @@
+.products-list-partial-e9d941 {
+    background: $gray_light;
+    padding: scaleVW(80.5012, $desktop) 0 scaleVW(180.8036, $desktop);
+    position: relative;
+    @media(max-width:768px){
+        padding: scaleVW(50, $movil) 0;
+    }
+    &::after{
+        content: '';
+        width: scaleVW(1703.1866, $desktop);
+        height: scaleVW(1.7, $desktop);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $dark;
+        @media(max-width:768px){
+            width: scaleVW(340.1866, $movil);
+            height: scaleVW(1, $movil);
+        }
+    } 
+    .products-content{
+        @include maxWidth;
+        .title-image{
+            width: scaleVW(381.75, $desktop);
+            height: scaleVW(229.76, $desktop);
+            display: flex;
+            margin: 0 auto scaleVW(82.8087, $desktop) auto;
+            @media(max-width:768px){
+                width: scaleVW(149.8656, $movil);
+                height: scaleVW(90.1981, $movil);
+                margin-bottom: scaleVW(32.5086, $movil);
+            }
+        }
+    }
+    .owl-carousel{
+        margin-bottom: scaleVW(69.6846, $desktop);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        .owl-item:nth-child(2n+1){
+            .product-card{
+                @include cardProductMinHeight;
+            }
+        }
+        .owl-item:nth-child(2n){
+            .product-card{
+                @include cardProductMaxHeight;
+            }
+        }
+    }
+    .see-all-cta{
+        @include seeMore;
+        margin-left: auto;
+        span{
+            font-size: scaleVW(46.18, $desktop);
+            line-height: LH(55.41, 46.18);
+            position: relative;
+            &::after{
+                content: '';
+                width: scaleVW(158.8873, $desktop);
+                height: scaleVW(1.7, $desktop);
+                background: $dark;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            @media(max-width:768px){
+                font-size: scaleVW(18.13, $movil);
+                line-height: LH(21.75,18.13);
+                &::after{
+                    width: 100%;
+                    height: scaleVW(1, $movil);
+                }
+            }
+        }
+    }
+}

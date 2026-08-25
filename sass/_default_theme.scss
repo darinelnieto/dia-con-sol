@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+@font-face {
+    font-family: 'Bodoni';
+    src: url('../fonts/Bodoni-Book.woff2') format('woff2'),
+        url('../fonts/Bodoni-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'OlivePoppy';
+    src: url('../fonts/OlivePoppyRegular.woff2') format('woff2'),
+        url('../fonts/OlivePoppyRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*========= Colrs =========*/
+$gray_light: #e6e5de;
+$dark: #373a36;
+$white: #ffffff;
+$black: #000000;
+$bg_btn: linear-gradient(90deg, #fbc926 0.5618%, #c3922e 25.254%, #c3922e 59.5506%, #eed688 87.0786%, #fffbcc 100%);
+/*========= Fonts =========*/
+$bodoni_moda: "Bodoni Moda", serif;
+$bodoni_book: 'Bodoni';
+$Cormorant: "Cormorant Infant", serif;
+$olivePoppy: 'OlivePoppy';
+/*======== Function width ========*/
+$movil: 390;
+$desktop: 1920;
+@function scaleVW($size, $viewportWidth) {
+    @return calc(($size * 100) / $viewportWidth) * 1vw;
+}
+@function LH($lineheight, $fontSize) {
+    @return calc($lineheight / $fontSize);
+}
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+/*========= Mixings styles =========*/
+@mixin ctaBorderGold{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: scaleVW(31, $desktop);
+    padding: scaleVW(2, $desktop);
+    background: linear-gradient(90deg, #fbc926 0.5618%, #c3922e 25.254%, #c3922e 59.5506%, #eed688 87.0786%, #fffbcc 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude; 
+    top: 0;
+    left: 0;
+    @media(max-width:768px){
+        border-radius: scaleVW(30, $movil);
+    }
+}
+@mixin ctaStyle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: scaleVW(430.0673, $desktop);
+    height: scaleVW(62.6756, $desktop);
+    text-decoration:none;
+    font-family: $bodoni_book;
+    font-size: scaleVW(30.93, $desktop) !important;
+    line-height: 0;
+    padding-top: scaleVW(5, $desktop);
+    transition: all .2s ease;
+    border-radius: 35px;
+    &:hover{
+        transform: scale(.9);
+        color: $white !important;
+    }
+    @media(max-width:768px){
+        width: scaleVW(161.329, $movil);
+        height: scaleVW(23.3313, $movil);
+        font-size: scaleVW(16, $movil) !important;
+        line-height: LH(19.2, 16);
+        padding-top: scaleVW(3, $movil);
+        border-radius: scaleVW(30, $movil);
+    }
+}
+@mixin cardProductMinHeight{
+    @include productCardContent;
+    .product-image{
+        width: scaleVW(383.1812, $desktop);
+        height: scaleVW(383.1812, $desktop);
+        @include productImage;
+        @media(max-width:768px){
+            width: 100%;
+            height: scaleVW(184.1424, $movil);
+        }
+    }
+    .name-and-price{
+        @include productCardtext;
+    }
+}
+@mixin cardProductMaxHeight{
+    @include productCardContent;
+    .product-image{
+        width: scaleVW(383.1812, $desktop);
+        height: scaleVW(524.4214, $desktop);
+        @include productImage;
+        @media(max-width:768px){
+            width: 100%;
+            height: scaleVW(228.2161, $movil);
+        }
+    }
+    .name-and-price{
+        @include productCardtext;
+    }
+}
+@mixin productCardContent{
+    display: flex;
+    flex-direction: column;
+    max-width: scaleVW(391.3872, $desktop);
+    margin: 0 auto;
+    text-decoration: none;
+    gap: scaleVW(17.0945, $desktop);
+    @media(max-width:768px){
+        max-width: scaleVW(156.7517, $movil);
+        gap: scaleVW(7.4403, $movil);
+    }
+}
+@mixin productImage{
+    overflow: hidden;
+    border-radius: scaleVW(200, $desktop) scaleVW(200, $desktop) 0 0;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media(max-width:768px){
+        border-radius: scaleVW(200, $movil) scaleVW(200, $movil) 0 0;
+    }
+}
+@mixin productCardtext{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2, .price{
+        font-size: scaleVW(37.47, $desktop);
+        line-height: LH(44.97, 37.47);
+        width: fit-content;
+        font-family: $bodoni_book;
+        margin-bottom: 0;
+        color: $dark;
+        @media(max-width:768px){
+            font-size: scaleVW(16.31, $movil);
+            line-height: LH(19.57, 16.31);
+        }
+    }
+}
+/*======= Max width contains =======*/
+@mixin maxWidth{ 
+    width: 100%;
+    max-width: scaleVW(1686.9149, $desktop);
+    margin: 0 auto;
+    @media(max-width:768px){
+        max-width: scaleVW(360, $movil);            
+    }
+}
+/*========= Cta see more =========*/
+@mixin seeMore{
+    display: flex;
+    align-items: center;
+    gap: scaleVW(28.6843, $desktop);
+    text-decoration: none;
+    width: max-content;
+    span{
+        font-family: $bodoni_book;
+        color: $dark;
+    }
+    svg{
+        width: scaleVW(27.5481, $desktop);
+        height: scaleVW(22.3363, $desktop);
+        line, path{
+            stroke: $dark;
+        }
+    }
+    @media(max-width:768px){
+        gap: scaleVW(9.7728, $movil);
+        svg{
+            width: scaleVW(15.8147, $movil);
+            height: scaleVW(12.7687, $movil);
+        }
+    }
+}
+#wcspc-count{
+    display: none !important;
+}

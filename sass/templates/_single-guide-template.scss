@@ -1,0 +1,196 @@
+#single-guide-template-0c6fac {
+    background: $gray_light;
+    padding: scaleVW(80, $desktop);
+    @media(max-width: 768px){
+        padding-bottom: scaleVW(80, $movil);
+    }
+    .single-guide{
+        .content{
+            display: flex;
+            gap: scaleVW(143.4439, $desktop);
+            width: 100%;
+            max-width: scaleVW(1350, $desktop);
+            margin: 0 auto;
+            @media(max-width:768px){
+                max-width: scaleVW(360, $movil);
+                flex-direction:column;          
+            }
+            .single-content{
+                width: scaleVW(786.648, $desktop);
+                .single-feature{
+                    display: flex;
+                    flex-direction: column;
+                    gap: scaleVW(50.1664, $desktop);
+                    margin-bottom: scaleVW(84.6299, $desktop);
+                    img{
+                        width: scaleVW(644.0225, $desktop);
+                        height: scaleVW(644.0225, $desktop);
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                    h1{
+                        font-family: $bodoni_moda;
+                        font-size: scaleVW(48, $desktop);
+                        line-height: LH(57.6, 48);
+                        color: $dark;
+                        margin: 0;
+                    }
+                }
+                .publication-date{
+                    h3{
+                        font-family: $bodoni_moda;
+                        color: $dark;
+                        font-size: scaleVW(14, $desktop);
+                        line-height: LH(16.8, 14);
+                        margin-bottom: scaleVW(52.2411, $desktop);
+                    }
+                }
+                .description{
+                    font-family: $bodoni_moda;
+                    color: $dark !important;
+                    h2, h3, h4, h5, h6, strong{
+                        font-size: scaleVW(28, $desktop);
+                        line-height: LH(33, 28);
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: scaleVW(25, $desktop);
+                        line-height: LH(30, 25);
+                        font-weight: 400;
+                    }
+                }
+                @media(max-width:768px){
+                    width: 100%;
+                    .single-feature{
+                        gap: scaleVW(30.1664, $movil);
+                        margin-bottom: scaleVW(30.1664, $movil);
+                        img{
+                            width: 100%;
+                            height: scaleVW(400, $movil);
+                        }
+                        h1{
+                            font-size: scaleVW(36.61, $movil);
+                            line-height: LH(37.93, 36.61);
+                        }
+                    }
+                    .publication-date{
+                        h3{
+                            font-size: scaleVW(20, $movil);
+                            line-height: LH(25, 20);
+                        }
+                    }
+                    .description{
+                        h2, h3, h4, h5, h6, strong{
+                            font-size: scaleVW(20, $movil);
+                            line-height: LH(25, 20);
+                        }
+                        p{
+                            font-size: scaleVW(16, $movil);
+                            line-height: LH(20, 16);
+                        }
+                    }
+                }
+            }
+            // Right content
+            .rigth-content{
+                width: scaleVW(418.0077, $desktop);
+                display: flex;
+                flex-direction: column;
+                gap: scaleVW(140.0593, $desktop);
+                @media(max-width:768px){
+                    width: 100%;
+                    gap: scaleVW(40, $movil);
+                }
+                .podcast-link{
+                    display: flex;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .related-post{
+                    padding-top: scaleVW(55.9839, $desktop);
+                    border-top: scaleVW(2, $desktop) solid $dark;
+                    @media(max-width:768px){
+                       padding-top: scaleVW(40, $movil); 
+                    }
+                    h2{
+                        font-size: scaleVW(36, $desktop);
+                        line-height: LH(43.2, 36);
+                        color: $dark;
+                        font-family: $bodoni_moda;
+                        margin-bottom: scaleVW(72.7995, $desktop);
+                        @media(max-width:768px){
+                            font-size: scaleVW(25, $movil);
+                            line-height: LH(30, 25);
+                            margin-bottom: scaleVW(40, $movil);
+                        }
+                    }
+                    .post-list{
+                        display: flex;
+                        flex-direction: column;
+                        gap: scaleVW(126.3592, $desktop);
+                        @media(max-width:768px){
+                            gap: scaleVW(40, $movil);
+                        }
+                        .card-guide{
+                            a{
+                                text-decoration: none;
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                gap: scaleVW(37.772, $desktop);
+                                @media(max-width:768px){
+                                    gap: scaleVW(18, $movil);
+                                }
+                                img{
+                                    width: 100%;
+                                    height: scaleVW(418, $desktop);
+                                    object-fit: cover;
+                                    object-position: center;
+                                    @media(max-width:768px){
+                                        height: scaleVW(320.9293, $movil);
+                                    }
+                                }
+                                .text{
+                                    h3{
+                                        font-size: scaleVW(27, $desktop);
+                                        line-height: LH(32.4, 27);
+                                        font-family: $bodoni_moda;
+                                        color: $dark;
+                                        margin: 0;
+                                        min-height: scaleVW(81.3175, $desktop);
+                                    }
+                                    hr{
+                                        opacity: 1;
+                                        background: $dark;
+                                        height: scaleVW(3, $desktop);
+                                    }
+                                    p{
+                                        margin-bottom: 0;
+                                        font-family: $bodoni_moda;
+                                        color: $dark;
+                                        font-size: scaleVW(14, $desktop);
+                                        line-height: LH(16.8, 14);
+                                    }
+                                    @media(max-width:768px){
+                                        h3{
+                                            font-size: scaleVW(20.73, $movil);
+                                            line-height: LH(24.88, 20.73);
+                                            min-height: scaleVW(62.4334, $movil);
+                                        }
+                                        p{
+                                            font-size: scaleVW(14, $movil);
+                                            line-height: LH(18, 14);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

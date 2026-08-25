@@ -1,0 +1,75 @@
+.hero-banner-partial-d9ee41 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    .item{
+        width: scaleVW(1920, $desktop);
+        height: scaleVW(955.2546, $desktop);
+        overflow: hidden;
+        position: relative;
+        @media(max-width:768px){
+            width: 100%;
+            height: scaleVW(288.8728, $movil);
+        }
+        .main-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .text-contain{
+            position: absolute;
+            top: scaleVW(407.373, $desktop);
+            left: 50%;
+            transform: translate(-50%, 0);
+            max-width: scaleVW(730.3728, $desktop);
+            display: flex;
+            flex-direction: column;
+            gap: scaleVW(146.0826, $desktop);
+            @media(max-width:768px){
+                top: inherit;
+                transform: translateX(-50%);
+                bottom: scaleVW(50.2956, $movil);
+                max-width: scaleVW(261.0098, $movil);
+            }
+            .title{
+                font-family: $bodoni_book;
+                min-height: scaleVW(137.3216, $desktop);
+                font-size: scaleVW(60.96, $desktop);
+                line-height: LH(39.15, 60.96);
+                @media(max-width:768px){
+                    min-height: scaleVW(42.6547, $movil);
+                    font-size: scaleVW(18.93, $movil);
+                    line-height: LH(17.75, 18.93);
+                }
+            }
+            .text-image{
+                width: scaleVW(550.9632, $desktop);
+                height: scaleVW(194.0291, $desktop);
+                @media(max-width:768px){
+                    width: scaleVW(211.8237, $movil);
+                    height: scaleVW(74.5966, $movil);
+                }
+            }
+            .the-cta{
+                @include ctaStyle;
+            }
+            .border-gold{
+                color: $dark;
+                background: $bg_btn;
+                border-radius: scaleVW(30, $desktop);
+                @media(max-width:768px){
+                    border-radius: scaleVW(30, $movil);
+                }
+            }
+            .border-black{
+                border: scaleVW(2, $desktop) solid $dark;
+                background: $dark;
+                color: $gray_light;
+                border-radius: scaleVW(31, $desktop);
+                @media(max-width:768px){
+                    border-radius: scaleVW(30, $movil);
+                }
+            }
+        }
+    }
+}

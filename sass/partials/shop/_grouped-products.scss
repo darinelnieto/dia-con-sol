@@ -1,0 +1,32 @@
+.grouped-products-partial-fc3d4b {
+    .custom-grouped-product{
+        width: 100%;
+        background: #efebe4;
+        padding-bottom: scaleVW(85.9756, $desktop);
+        .product-image{
+            width: 100%;
+            height: scaleVW(791.5937, $desktop);
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .btn-comprar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: scaleVW(553.4106, $desktop);
+            height: scaleVW(81.3457, $desktop);
+            border-radius: scaleVW(40.67, $desktop);
+            background: $dark;
+            color: $white;
+            font-family: $olivePoppy;
+            text-decoration: none;
+            font-size: scaleVW(35.2, $desktop);
+            line-height: LH(42.24, 35.2);
+        }
+    }
+}

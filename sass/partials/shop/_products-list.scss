@@ -1,0 +1,96 @@
+.products-list-partial-dc09c7 {
+    background: #efebe4;
+    padding: scaleVW(64.6805, $desktop) 0 scaleVW(168.6825, $desktop) 0;
+    @media(max-width:768px){
+        padding: scaleVW(50, $movil) 0 scaleVW(60, $movil) 0;
+    }
+    .content{
+        width: scaleVW(1695.1216, $desktop);
+        margin: 0 auto;
+        h1{
+            font-size: scaleVW(82, $desktop);
+            line-height: LH(98.4, 82);
+            color: $black;
+            margin-bottom: scaleVW(63.4027, $desktop);
+            font-family: $bodoni_moda;
+            @media(max-width:768px){
+                font-size: scaleVW(33.63, $movil);
+                line-height: LH(39.84, 33.63);
+                margin-bottom: scaleVW(20, $movil);
+            }
+        }
+        .products-content{
+            display: flex;
+            flex-wrap: wrap;
+            gap: scaleVW(31.7322, $desktop) scaleVW(45.2081, $desktop);
+            align-items: center;
+            @media(max-width:768px){
+                gap: scaleVW(31.7322, $movil) scaleVW(10.2081, $movil);
+            }
+            .woocommerce{
+                width: scaleVW(383.1812, $desktop);
+                @media(max-width:768px){
+                    width: scaleVW(166.7517, $movil);
+                }
+                a{
+                    text-decoration: none;
+                    .product-image{
+                        width: 100%;
+                        height: scaleVW(383.1812, $desktop);
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            border-radius: scaleVW(182.54, $desktop) scaleVW(182.54, $desktop) 0 0;
+                        }
+                        @media(max-width:768px){
+                            height: scaleVW(184.1424, $movil);
+                            img{
+                                border-radius: scaleVW(200, $movil) scaleVW(200, $movil) 0 0;
+                            }
+                        }
+                    }
+                    .name-and-price{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: scaleVW(13.2121, $desktop);
+                        h2{
+                            color: $black;
+                            font-family: $bodoni_moda;
+                            font-size: scaleVW(37.47, $desktop);
+                            line-height: LH(44.97, 37.47);
+                            margin-bottom: 0;
+                            
+                        }
+                        .price{
+                            color: $black;
+                            font-family: $bodoni_moda;
+                            font-size: scaleVW(37.47, $desktop);
+                            line-height: LH(44.97, 37.47);
+                            margin-bottom: 0;
+                        }
+                        @media(max-width:768px){
+                            margin-top: scaleVW(7.4403, $movil);
+                            h2, .price{
+                                font-size: scaleVW(16.31, $movil);
+                                line-height: LH(19.57, 16.31);
+                            }
+                        }
+                    }
+                }
+            }
+            .woocommerce:nth-child(2n){
+                a{
+                    .product-image{
+                        height: scaleVW(524.4214, $desktop);
+                        @media(max-width:768px){
+                            height: scaleVW(184.1424, $movil);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

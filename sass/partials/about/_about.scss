@@ -1,0 +1,89 @@
+.about-partial-5558a0 {
+    background: $gray_light;
+    .content{
+        .top{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: left;
+            gap: scaleVW(81.9064, $desktop);
+            margin-left: scaleVW(260.867, $desktop);
+            padding-top: scaleVW(156.1305, $desktop);
+            padding-bottom: scaleVW(146.6308, $desktop);
+            @media(max-width:768px){
+                width: scaleVW(360, $movil);  
+                margin: 0 auto;
+                flex-direction: column;
+            }
+            .image-contain{
+                width: scaleVW(571.003, $desktop);
+                height: scaleVW(661.5663, $desktop);
+                overflow: hidden;
+                border-radius: scaleVW(285.5, $desktop) scaleVW(285.5, $desktop) 0 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+                @media(max-width:768px){
+                    width: scaleVW(337.1392, $movil);
+                    height: scaleVW(390.6107, $movil);
+                    border-radius: scaleVW(168.569, $movil) scaleVW(168.569, $movil) 0 0;
+                }
+            }
+            .title-content{
+                width: scaleVW(542.7979, $desktop);
+                height: scaleVW(205.7354, $desktop);
+                position: relative;
+                h1{
+                    color: $black;
+                    font-family: $bodoni_book;
+                    font-size: scaleVW(189.79, $desktop);
+                    line-height: LH(227.75, 189.79);
+                    position: relative;
+                    z-index: 1;
+                    margin: 0;
+                }
+                .icon{
+                    position: absolute;
+                    top: scaleVW(15.9998, $desktop);
+                    right: - scaleVW(8.5478, $desktop);
+                    width: scaleVW(209.8738, $desktop);
+                    height: scaleVW(208.3605, $desktop);
+                }
+                @media(max-width: 768px){
+                    width: scaleVW(308.1984, $movil);
+                    height: scaleVW(116.8154, $movil);
+                    h1{
+                        font-size: scaleVW(107.76, $movil);
+                        line-height: LH(129.32, 107.76);
+                    }
+                    .icon{
+                        top: scaleVW(9.0846, $movil);
+                        right: - scaleVW(4.8534, $movil);
+                        width: scaleVW(119.1656, $movil);
+                        height: scaleVW(118.3063, $movil);
+                    }
+                }
+            }
+        }
+        .buttom{
+            padding-bottom: scaleVW(57.2437, $desktop);
+            width: scaleVW(1190.9975, $desktop);
+            margin: 0 auto;
+            font-size: scaleVW(28, $desktop);
+            line-height: LH(27.6, 28);
+            min-height: scaleVW(427.0795, $desktop);
+            font-family: $bodoni_book;
+            color: $black;
+            @media(max-width: 768px){
+                width: scaleVW(360, $movil);
+                padding-bottom: scaleVW(73.9668, $movil);
+                font-size: scaleVW(16, $movil);
+                line-height: LH(19.2, 16);
+                min-height: auto;
+            }
+        }
+    }
+}

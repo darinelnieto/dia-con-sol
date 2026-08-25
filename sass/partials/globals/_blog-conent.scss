@@ -1,0 +1,104 @@
+.blog-conent-partial-95825f {
+    background: $gray_light;
+    padding: scaleVW(80, $desktop) 0;
+    @media(max-width: 768px){
+        padding-bottom: scaleVW(80, $movil);
+    }
+    .content{
+        @include maxWidth;
+        h1{
+            font-family: $bodoni_book;
+            font-size: scaleVW(83.69, $desktop);
+            line-height: LH(46.75, 83.69);
+            text-align: center;
+            color: $dark;
+            margin-bottom: scaleVW(80, $desktop);
+            @media(max-width: 768px){
+                font-size: scaleVW(56.61, $movil);
+                line-height: LH(67.93, 56.61);
+                margin-bottom: scaleVW(30, $movil);
+            }
+        }
+        #astral-guides{
+            display: flex;
+            flex-wrap: wrap;
+            gap: scaleVW(57.2732, $desktop);
+            @media(max-width:768px){
+                flex-direction:column;
+                gap: scaleVW(40, $movil);
+            }
+            .the-guide{
+                display: flex;
+                flex-direction: column;
+                width: scaleVW(418, $desktop);
+                text-decoration: none;
+                gap: scaleVW(37.772, $desktop);
+                @media(max-width:768px){
+                    width: 100%;
+                    gap: scaleVW(18, $movil);
+                }
+                img{
+                    width: 100%;
+                    height: scaleVW(418, $desktop);
+                    object-fit: cover;
+                    object-position: center;
+                    @media(max-width:768px){
+                        height: scaleVW(320.9293, $movil);
+                    }
+                }
+                .text{
+                    h3{
+                        font-size: scaleVW(27, $desktop);
+                        line-height: LH(32.4, 27);
+                        font-family: $bodoni_moda;
+                        color: $dark;
+                        margin: 0;
+                        min-height: scaleVW(81.3175, $desktop);
+                    }
+                    hr{
+                        opacity: 1;
+                        background: $dark;
+                        height: scaleVW(3, $desktop);
+                    }
+                    p{
+                        margin-bottom: 0;
+                        font-family: $bodoni_moda;
+                        color: $dark;
+                        font-size: scaleVW(14, $desktop);
+                        line-height: LH(16.8, 14);
+                    }
+                    @media(max-width:768px){
+                        h3{
+                            font-size: scaleVW(20.73, $movil);
+                            line-height: LH(24.88, 20.73);
+                            min-height: scaleVW(62.4334, $movil);
+                        }
+                        p{
+                            font-size: scaleVW(14, $movil);
+                            line-height: LH(18, 14);
+                        }
+                    }
+                }
+            }
+        }
+        .see-more{
+            display: flex;
+            margin: scaleVW(80, $desktop) auto 0 auto;
+            width: scaleVW(350.4869, $desktop);
+            height: scaleVW(81.3457, $desktop);
+            border-radius: scaleVW(40, $desktop);
+            background: $dark;
+            color: $white;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            outline: none;
+            @media(max-width:768px){
+                margin: scaleVW(80, $movil) auto 0 auto;
+                width: 100%;
+                height: scaleVW(51.3457, $movil);
+                border-radius: scaleVW(40, $movil);
+            }
+        }
+    }
+}

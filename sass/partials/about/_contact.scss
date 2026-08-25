@@ -1,0 +1,129 @@
+.contact-partial-8825b8 {
+    background: $gray_light;
+    .contact{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-bottom: scaleVW(129.273, $desktop);
+        width: scaleVW(1179.793, $desktop);
+        margin: 0 auto;
+        gap: scaleVW(259.3986, $desktop);
+        .form{
+            width: scaleVW(528.7693, $desktop);
+            .inputs{
+                p{
+                    input{
+                        width: 100%;
+                        border: none;
+                        border-bottom: scaleVW(2, $desktop) solid $black;
+                        font-family: $bodoni_book;
+                        font-size: scaleVW(43.71, $desktop);
+                        line-height: LH(40.45, 43.71);
+                        outline: none;
+                        background: transparent;
+                        color: $black;
+                        margin-bottom: scaleVW(32.157, $desktop);
+                        &::placeholder{
+                            color: $black;
+                        }
+                    }
+                    textarea{
+                        width: 100%;
+                        height: scaleVW(91.2298, $desktop);
+                        border: none;
+                        border-bottom: scaleVW(2, $desktop) solid $black;
+                        font-family: $bodoni_book;
+                        font-size: scaleVW(43.71, $desktop);
+                        line-height: LH(40.45, 43.71);
+                        outline: none;
+                        background: transparent;
+                        color: $black;
+                        margin-bottom: scaleVW(32.157, $desktop);
+                        &::placeholder{
+                            color: $black;
+                        }
+                    }
+                }
+            }
+            .submit{
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 0;
+                    position: relative;
+                    input{
+                        width: 100%;
+                        height: scaleVW(94.03, $desktop);
+                        border: scaleVW(2, $desktop) solid $black;
+                        background: transparent;
+                        color: $black;
+                        font-size: scaleVW(43.71, $desktop);
+                        line-height: LH(40.45, 43.71);
+                        font-family: $bodoni_book;
+                    }
+                    .wpcf7-spinner{
+                        position: absolute;
+                        margin: 0;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+        h2{
+            font-size: scaleVW(82, $desktop);
+            line-height: LH(98.4, 82);
+            color: $black;
+            font-family: $bodoni_book;
+        }
+        @media(max-width:768px){
+            padding-bottom: scaleVW(126.9904, $movil);
+            width: scaleVW(360, $movil);
+            flex-direction:column;
+            align-items: flex-start;
+            gap: 0;
+            h2{
+                font-size: scaleVW(56.61, $movil);
+                line-height: LH(67.93, 56.61);
+            }
+            .form{
+                width:100%;
+                .inputs{
+                    p{
+                        margin-bottom: scaleVW(20, $movil);
+                        display:flex;
+                        flex-direction: column;
+                        gap: scaleVW(10, $movil);
+                        br{
+                            display:none;
+                        }
+                        input{
+                            border-width: scaleVW(1.3, $movil);
+                            font-size: scaleVW(16, $movil);
+                            line-height: LH(20, 16);
+                            padding: scaleVW(10, $movil);
+                        }
+                        textarea{
+                            height: scaleVW(80, $movil);
+                            font-size: scaleVW(16, $movil);
+                            line-height: LH(20, 16);
+                            border-width: scaleVW(1.3, $movil);
+                            padding: scaleVW(10, $movil);
+                        }
+                    }
+                }
+                .submit{
+                    p{
+                        input{
+                            height: scaleVW(59.0573, $movil);
+                            border-width: scaleVW(1.3, $movil);
+                            font-size: scaleVW(27.45, $movil);
+                            line-height: LH(25.4, 27.45);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

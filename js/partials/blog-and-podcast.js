@@ -1,0 +1,25 @@
+// JS for partial: blog-and-podcast\n
+$(()=>{
+    $('.podscast-slide').owlCarousel({
+        loop:false,
+        autoplay:false,
+        margin:10,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                loop:true,
+                autoplay:true,
+                items:2
+            },
+            640:{
+                loop:true,
+                autoplay:true,
+                items:3
+            },
+            768:{
+                items:4
+            }
+        }
+    }).css('opacity',1);
+});

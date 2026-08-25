@@ -1,0 +1,149 @@
+.after-banner-partial-aafaf9 {
+    background: $gray_light;
+    position: relative;
+    overflow: hidden;
+    width: scaleVW(1920, $desktop);
+    height: scaleVW(1394.8912, $desktop);
+    @media(max-width:768px){
+        height: auto;
+        width: 100%;
+    }
+    .secondary-img{
+        position: absolute;
+        width: scaleVW(1425.31, $desktop);
+        height: scaleVW(1425.31, $desktop);
+        right: - scaleVW(546.8349, $desktop);
+        top: - scaleVW(81.2514, $desktop);
+        opacity: 50%;
+        @media(max-width:768px){
+            width: scaleVW(289.1097, $movil);
+            height: scaleVW(289.1097, $movil);
+            right: - scaleVW(110.9602, $movil);
+            top: - scaleVW(18.1593, $movil);
+        }
+    }
+    .sodiac-sign{
+        position: absolute;
+        width: scaleVW(51.8024, $desktop);
+        height: scaleVW(842.0167, $desktop);
+        top: scaleVW(101.6336, $desktop);
+        left: scaleVW(406.2516, $desktop);
+        @media(max-width:768px){
+            width: scaleVW(10.5076, $movil);
+            height: scaleVW(170.7946, $movil);
+            top: scaleVW(19.3341, $movil);
+            left: scaleVW(33.1574, $movil);
+        }
+    }
+    .about-content{
+        width: scaleVW(938.5476, $desktop);
+        height: scaleVW(1028.9355, $desktop);
+        margin-left: scaleVW(502.8432, $desktop);
+        margin-top: scaleVW(207.2084, $desktop);
+        position: relative;
+        @media(max-width:768px){
+            width: scaleVW(262.994, $movil);
+            margin: 0 auto;
+            margin-top: scaleVW(17.47, $movil);
+            height: auto;
+        }
+        .title{
+            max-width: scaleVW(593.1895, $desktop);
+            font-size: scaleVW(119.87, $desktop);
+            line-height: 1;
+            font-family: $bodoni_moda;
+            color: $dark;
+            margin-bottom: scaleVW(34.9834, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(33.63, $movil);
+                width: scaleVW(166.4216, $movil);
+                margin-bottom: scaleVW(8.1368, $movil);
+            }
+        }
+        .description{
+            font-size: scaleVW(33.37, $desktop);
+            line-height: LH(40.04, 33.37);
+            height: scaleVW(213.841, $desktop);
+            color: $dark;
+            font-family: $bodoni_moda;
+            margin-bottom: scaleVW(45.1114, $desktop);
+            @media(max-width:768px){
+                font-family: $bodoni_book;
+                font-size: scaleVW(16, $movil);
+                line-height: LH(19.2, 16);
+                height: auto;
+                margin-bottom: scaleVW(12.1107, $movil);
+            }
+        }
+        .subtitle{
+            font-size: scaleVW(82.34, $desktop);
+            line-height: LH(51.5, 82.34);
+            text-align: center;
+            font-family: $bodoni_book;
+            color: $dark;
+            margin-bottom: scaleVW(34.6269, $desktop);
+            @media(max-width:768px){
+                font-family: $bodoni_book;
+                font-size: scaleVW(16, $movil);
+                line-height: LH(19.2, 16);
+                height: auto;
+                margin-bottom: scaleVW(12.1107, $movil);
+            }
+        }
+        .cta-border-gold{
+            @include ctaStyle;
+            background: $dark;
+            color: $white;
+        }
+        .end-section{
+            display: flex;
+            align-items: center;
+            gap: scaleVW(26.8082, $desktop);
+            width: scaleVW(875.8955, $desktop);
+            margin-top: scaleVW(37.489, $desktop);
+            @media(max-width:768px){
+                width: scaleVW(245.7361, $movil);
+                margin: 0 auto;
+                margin-top: scaleVW(19.1307, $movil);
+                gap: scaleVW(7.1743, $movil);
+                justify-content: center;
+            }
+            .left{
+                min-width: scaleVW(337.2847, $desktop);
+                margin-bottom: 0;
+                font-size: scaleVW(43.71, $desktop);
+                line-height: LH(52.45, 43.71);
+                text-align: right;
+                font-family: $bodoni_book;
+                color: $dark;
+                @media(max-width:768px){
+                    width: scaleVW(94.6265, $movil);
+                    font-size: scaleVW(12.26, $movil);
+                    line-height: LH(14.71, 12.26);
+                }
+            }
+            img{
+                width: scaleVW(88.1309, $desktop);
+                height: scaleVW(87.4955, $desktop);
+                @media(max-width:768px){
+                    width: scaleVW(24.7255, $movil);
+                    height: auto;
+                }
+            }
+            .right{
+                min-width: scaleVW(398.123, $desktop);
+                margin-bottom: 0;
+                font-size: scaleVW(43.71, $desktop);
+                line-height: LH(52.45, 43.71);
+                text-align: left;
+                font-family: $bodoni_book;
+                color: $dark;
+                @media(max-width:768px){
+                    width: scaleVW(111.6949, $movil);
+                    font-size: scaleVW(12.26, $movil);
+                    line-height: LH(14.71, 12.26);
+                }
+            }
+        }
+    }
+}

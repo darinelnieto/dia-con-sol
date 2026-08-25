@@ -1,0 +1,23 @@
+// JS for partial: products-list\n
+$(()=>{
+    $('.slide-product').owlCarousel({
+        loop:false,
+        autoplay:false,
+        nav:false,
+        dots:false,
+        margin:10,
+        responsive:{
+            0:{
+                autoplay:true,
+                loop:true,
+                items:2
+            },
+            640:{
+                autoplay:true,
+                loop:true,
+                items:3
+            },
+            768:{items:4}
+        }
+    }).css('opacity',1);
+});

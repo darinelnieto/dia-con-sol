@@ -1,0 +1,85 @@
+.faqs-content-partial-ab2fc2 {
+    background: $gray_light;
+    padding-top: scaleVW(117.9347, $desktop);
+    padding-bottom: scaleVW(120.9312, $desktop);
+    .title-contain{
+        @include maxWidth;
+        text-align: center;
+        padding-bottom: scaleVW(117.9347, $desktop);
+        h1{
+            font-family: $bodoni_moda;
+            font-size: scaleVW(82, $desktop);
+            font-weight: 400;
+            line-height: LH(98.4, 82);
+            margin-bottom: 0;
+            color: $dark;
+            @media(max-width:768px){
+                font-size: scaleVW(33.63, $movil);
+                line-height: LH(40.36, 33.63);
+            }
+        }
+    }
+    .faqs-contain{
+        @include maxWidth;
+        margin-bottom: scaleVW(91.3196, $desktop);
+        .the-faq{
+            .faq-question{
+                border: scaleVW(0.9131, $desktop) solid $dark;
+                padding: scaleVW(37.4442, $desktop) scaleVW(57.7914, $desktop);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                h2{
+                    margin-bottom: 0;
+                    font-family: $bodoni_moda;
+                    font-size: scaleVW(40, $desktop);
+                    line-height: LH(48, 40);
+                    color: $dark;
+                    font-weight: 400;
+                    @media(max-width:768px){
+                        font-size: scaleVW(20, $movil);
+                        line-height: LH(23, 20);
+                        width:72vw;
+                    }
+                }
+                svg{
+                    width: scaleVW(22.1118, $desktop);
+                    height: scaleVW(19.4795, $desktop);
+                    transition: .3s;
+                    @media(max-width:768px){
+                        min-width: scaleVW(16.985, $movil);
+                        min-height: scaleVW(19.2802, $movil);
+                    }
+                }
+            }
+            .faq-answer{
+                display: none;
+                padding: scaleVW(14.8252, $desktop) scaleVW(57.7914, $desktop) scaleVW(72.4182, $desktop) scaleVW(57.7914, $desktop);
+                font-family: $bodoni_moda;
+                font-size: scaleVW(24, $desktop);
+                line-height: LH(28.8, 24);
+                color: $dark;
+                @media(max-width:768px){
+                    font-size: scaleVW(16, $movil);
+                    line-height: LH(24, 16);
+                }
+            }
+        }
+        .the-faq.active{
+            .faq-question{
+                svg{
+                    transform: rotate(-80deg);
+                }
+            }
+            .faq-answer{
+                display: block;
+            }
+        }
+    }
+    .appointment-cta{
+        @include ctaStyle;
+        background: $dark;
+        color: $white;
+    }
+}

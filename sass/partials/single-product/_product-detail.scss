@@ -1,0 +1,450 @@
+.woocommerce-breadcrumb{
+    display: none;
+}
+.product-detail{
+    background: $gray_light;
+    padding-top: scaleVW(123.2555, $desktop);
+    @media(max-width:768px){
+        padding-top: scaleVW(40, $movil);
+    }
+    .content{
+        display: flex;
+        width: scaleVW(1473.7817, $desktop);
+        margin: 0 auto;
+        gap: scaleVW(55.0104, $desktop);
+        align-items: end;
+        @media(max-width:768px){
+            width: scaleVW(360, $movil);
+            flex-direction: column;
+            gap: scaleVW(30, $movil);
+        }
+        .left{
+            width: scaleVW(846.9444, $desktop);
+            display: flex;
+            gap: scaleVW(24.3595, $desktop);
+            @media(max-width:768px){
+                width: 100%;
+                gap: scaleVW(10, $movil);
+                flex-direction: column-reverse;
+            }
+            .nav-controller{
+                width: scaleVW(125.8556, $desktop);
+                height: scaleVW(696.7293, $desktop);
+                overflow: auto;
+                @media(max-width:768px){
+                    width: 100%;
+                    height: max-content;
+                }
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: scaleVW(16.8629, $desktop);
+                    padding: 0;
+                    margin: 0;
+                    @media(max-width:768px){
+                        flex-direction: row;
+                        gap: scaleVW(12, $movil);
+                    }
+                    li{
+                        button{
+                            width: 100%;
+                            height: scaleVW(125.8556, $desktop);
+                            padding: 0;
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            @media(max-width:768px){
+                                width: scaleVW(79.071, $movil);
+                                height: scaleVW(79.071, $movil);
+                            }
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                        }
+                    }
+                }
+            }
+            // Gallerry
+            .gallery{
+                width: scaleVW(696.7293, $desktop);
+                .gallery-slide{
+                    opacity:0;
+                    transition: opacity .2s ease;
+                }
+                .item{
+                    width: scaleVW(696.7293, $desktop);
+                    height: scaleVW(696.7293, $desktop);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                @media(max-width:768px){
+                    width: scaleVW(360, $movil);
+                    .item{
+                        width: scaleVW(360, $movil);
+                        height: scaleVW(360, $movil);
+                    }
+                }
+            }
+        }
+        .right{
+            width: scaleVW(561.0192, $desktop);
+            @media(max-width:768px){
+                width: 100%;
+            }
+            h1{
+                font-family: $bodoni_book;
+                font-size: scaleVW(76.07, $desktop);
+                line-height: LH(91.28, 76.07);
+                color: $dark;
+                margin-bottom: scaleVW(38.6016, $desktop);
+                @media(max-width:768px){
+                    font-size: scaleVW(46.3, $movil);
+                    line-height: LH(55.56, 46.3);
+                    margin-bottom: scaleVW(15, $movil);
+                }
+            }
+            .description{
+                font-family: $bodoni_moda;
+                font-size: scaleVW(25.97, $desktop);
+                line-height: LH(25.6, 25.97);
+                color: $dark;
+                margin-bottom: scaleVW(38.6016, $desktop);
+                p{
+                    margin-bottom: 0;
+                }
+                @media(max-width:768px){
+                    font-size: scaleVW(15.81, $movil);
+                    line-height: LH(18, 15.81);
+                    margin-bottom: scaleVW(15, $movil);
+                }
+            }
+            .price{
+                font-family: $bodoni_moda;
+                font-size: scaleVW(57.32, $desktop);
+                line-height: LH(68.78, 57.32);
+                margin-bottom: scaleVW(38.6016, $desktop);
+                del{
+                    opacity: .7;
+                }
+                ins{
+                    text-decoration: none;
+                }
+                @media(max-width:768px){
+                    font-size: scaleVW(34.89, $movil);
+                    line-height: LH(41.86, 34.89);
+                    margin-bottom: scaleVW(15, $movil);
+                }
+            }
+            .count{
+                h3{
+                    color: $dark;
+                    font-family: $bodoni_moda;
+                    font-size: scaleVW(48.24, $desktop);
+                    line-height: LH(25.6, 48.24);
+                    margin-bottom: scaleVW(12.062, $desktop);
+                    height: scaleVW(33.3291, $desktop);
+                    @media(max-width:768px){
+                        font-size: scaleVW(29.36, $movil);
+                        line-height: LH(15.58, 29.36);
+                        margin-bottom: scaleVW(15, $movil);
+                        height: max-content;
+                    }
+                }
+                form{
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: scaleVW(15.6711, $desktop);
+                    &::after, &::before{
+                        display: none;
+                    }
+                    .quantity{
+                        .count{
+                            width: scaleVW(222.5271, $desktop);
+                            height: scaleVW(87.2247, $desktop);
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border: scaleVW(1, $desktop) solid $dark;
+                            @media(max-width:768px){
+                                width: 100%;
+                                height: scaleVW(53.0899, $movil);
+                            }
+                            input{
+                                width: scaleVW(109.9833, $desktop);
+                                height: 100%;
+                                background: transparent;
+                                border: none;
+                                outline: none;
+                                text-align: center;
+                                font-family: $bodoni_moda;
+                                font-size: scaleVW(48.24, $desktop);
+                                line-height: LH(25.6, 48.24);
+                                color: $dark;
+                                // -moz-appearance: textfield;
+                                &::-webkit-inner-spin-button, &::-webkit-outer-spin-button{
+                                    -webkit-appearance: none;
+                                    margin: 0;
+                                }
+                                @media(max-width:768px){
+                                    width: scaleVW(75.4427, $movil);
+                                    font-size: scaleVW(29.36, $movil);
+                                    line-height: LH(15.58, 29.36);
+                                }
+                            }
+                            button{
+                                height: 100%;
+                                width: scaleVW(55.9826, $desktop);
+                                background: transparent;
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                                font-family: $bodoni_book;
+                                font-size: scaleVW(48.24, $desktop);
+                                line-height: LH(25.6, 48.24);
+                                color: $dark;
+                                @media(max-width:768px){
+                                    width: scaleVW(32.9806, $movil);
+                                    font-size: scaleVW(29.36, $movil);
+                                    line-height: LH(15.58, 29.36);
+                                }
+                            }
+                        }
+                    }
+                    .single_add_to_cart_button{
+                        background: transparent;
+                        border: scaleVW(1, $desktop) solid $dark;
+                        border-radius: 0;
+                        width: scaleVW(322.821, $desktop);
+                        height: scaleVW(87.2247, $desktop);
+                        outline: none;
+                        color: $dark;
+                        font-family: $bodoni_moda;
+                        font-size: scaleVW(27.83, $desktop);
+                        line-height: LH(13.84, 27.83);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        @media(max-width:768px){
+                            width: scaleVW(196.4873, $movil);
+                            height: scaleVW(53.0899, $movil);
+                            font-size: scaleVW(16.94, $movil);
+                            line-height: LH(8.42, 16.94);
+                        }
+                        &::after{
+                            position: absolute;
+                            top: 50%;
+                            right: 2%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    .added_to_cart{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+// Related products
+.related-products{
+    padding: scaleVW(83.878, $desktop) 0;
+    background: $gray_light;
+    @media(max-width:768px){
+        padding: scaleVW(40, $movil) 0;
+    }
+    .content{
+        width: scaleVW(1686.9149, $desktop);
+        margin: 0 auto scaleVW(71.2518, $desktop) auto;
+        .svg-contain{
+            width: scaleVW(534.3173, $desktop);
+            margin-bottom: scaleVW(27.5097, $desktop);
+            svg{
+                width: 100%;
+                height: auto;
+            }
+            @media(max-width:768px){
+                width: scaleVW(255.5441, $movil);
+                margin-bottom: scaleVW(30, $movil);
+            }
+        }
+        .relateds-contain{
+            opacity:0;
+            transition: opacity .2s ease;
+            .owl-stage{
+                display: flex;
+                align-items: center;
+                .owl-item:nth-child(2n+1){
+                    .product-card{
+                        @include cardProductMinHeight;
+                    }
+                }
+                .owl-item:nth-child(2n){
+                    .product-card{
+                        @include cardProductMaxHeight;
+                    }
+                }
+            }
+        }
+    }
+    .see-all{
+        @include seeMore;
+        justify-content: end;
+        margin-left: auto;
+        margin-right: scaleVW(57, $desktop);
+        width: fit-content;
+        span{
+            font-size: scaleVW(46.18, $desktop);
+            line-height: LH(55.41, 46.18);
+            position: relative;
+            &::after{
+                content: '';
+                width: scaleVW(158.8873, $desktop);
+                height: scaleVW(1.7, $desktop);
+                background: $dark;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        @media(max-width:768px){
+            margin-right: scaleVW(32.3992, $movil);
+            span{
+                font-size: scaleVW(18.13, $movil);
+                line-height: LH(21.75,18.13);
+                &::after{
+                    width: 100%;
+                    height: scaleVW(1, $movil);
+                }
+            }
+        }
+    }
+}
+// Cart popup
+#wcspc-area{
+    background: $gray_light;
+    &::after{
+        display: none;
+    }
+    .wcspc-area-top{
+        .wcspc-item{
+            .wcspc-item-inner{
+                background: transparent;
+                border: none;
+                padding-left: 0;
+                .wcspc-item-info{
+                    .wcspc-item-title{
+                        a{
+                            font-family: $bodoni_book;
+                            font-size: scaleVW(24, $desktop);
+                            line-height: LH(28, 24);
+                            color: $dark;
+                        }
+                    }
+                    .wcspc-item-price{
+                        .woocommerce-Price-amount{
+                            font-family: $bodoni_moda;
+                            font-size: scaleVW(20, $desktop);
+                            line-height: LH(24, 20);
+                            color: $dark;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .wcspc-item-qty{
+                    .wcspc-item-qty-inner{
+                        .wcspc-item-qty-plus, .wcspc-item-qty-minus{
+                            background: transparent;
+                            cursor: pointer;
+                            font-family: $bodoni_book;
+                            font-size: scaleVW(24, $desktop);
+                            line-height: LH(28, 24);
+                            color: $dark;
+                            height: scaleVW(20, $desktop);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .wcspc-item-qty-input{
+                            background: transparent;
+                            font-family: $bodoni_book;
+                            font-size: scaleVW(28, $desktop);
+                            line-height: LH(32, 28);
+                            color: $dark;
+                            margin: 0 !important;
+                            height: max-content;
+                            min-height: auto;
+                            padding: 5px 0 !important;
+                        }
+                    }
+                }
+                .wcspc-item-remove{
+                    &::before{
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+    .wcspc-area-bot{
+        .wcspc-total{
+            .wcspc-total-inner{
+                display: flex;
+                align-items: center;
+                .wcspc-total-left{
+                    color: $dark;
+                    font-size: scaleVW(20, $desktop);
+                    line-height: LH(24, 20);
+                    font-family: $bodoni_book;
+                    font-weight: 400;
+                }
+                .wcspc-total-right{
+                    .woocommerce-Price-amount{
+                        color: $dark;
+                        font-size: scaleVW(28, $desktop);
+                        line-height: LH(32, 28);
+                        font-family: $bodoni_moda;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .wcspc-continue{
+            display: none;
+        }
+        .wcspc-action{
+            .wcspc-action-inner{
+                display: flex;
+                flex-direction: column;
+                gap: scaleVW(20, $desktop);
+                .wcspc-action-left, .wcspc-action-right{
+                    width: 100%;
+                    padding: 0;
+                    a{
+                        background: transparent;
+                        border: scaleVW(1, $desktop) solid $dark;
+                        border-radius: 0;
+                        height: scaleVW(57.2247, $desktop);
+                        outline: none;
+                        color: $dark;
+                        font-family: $bodoni_moda;
+                        font-size: scaleVW(23.83, $desktop);
+                        line-height: LH(13.84, 23.83);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

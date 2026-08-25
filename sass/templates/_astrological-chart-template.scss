@@ -1,0 +1,318 @@
+#astrological-chart-template-835eff {
+    padding-top: scaleVW(289.1129, $desktop);
+    padding-bottom: scaleVW(289.1129, $desktop);
+    background: $gray_light;
+    position: relative;
+    .astrological-chart{
+        .main-image{
+            width: scaleVW(1009.1854, $desktop);
+            height: scaleVW(1009.1854, $desktop);
+            position: absolute;
+            top: scaleVW(-67.9338, $desktop);
+            left: scaleVW(-267.085, $desktop);
+            z-index: 0;
+            opacity: 50%;
+            @media(max-width:768px){
+                width: scaleVW(375, $movil);
+                height: scaleVW(375, $movil);
+                top: scaleVW(50, $movil);
+            }
+        }
+        .end-image{
+            width: scaleVW(451.1437, $desktop);
+            height: scaleVW(378.5597, $desktop);
+            position: absolute;
+            bottom: scaleVW(189.343, $desktop);
+            right: scaleVW(-57.6004, $desktop);
+            z-index: 0;
+            opacity: 50%;
+            @media(max-width:768px){
+                width: scaleVW(225, $movil);
+                height: auto;
+            }
+        }
+        .content {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            @media(max-width:768px){
+                max-width: scaleVW(360, $movil);
+            }
+            .main-content{
+                text-align: center;
+                max-width: scaleVW(1141.6425, $desktop);
+                margin: 0 auto;
+                h1{
+                    font-family: $bodoni_moda;
+                    font-size: scaleVW(82, $desktop);
+                    line-height: LH(98.4, 82);
+                    color: $dark;
+                    margin-bottom: scaleVW(10, $desktop);
+                    @media(max-width:768px){
+                        font-size: scaleVW(24, $movil);
+                        line-height: LH(28.8, 24);
+                        margin-bottom: scaleVW(15, $movil);
+                    }
+                }
+                p{
+                    font-family: $bodoni_book;
+                    font-size: scaleVW(28, $desktop);
+                    line-height: LH(27.6, 28);
+                    color: $dark;
+                    margin-bottom: scaleVW(157.2352, $desktop);
+                    @media(max-width:768px){
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        margin-bottom: scaleVW(20, $movil);
+                    }
+                }
+            }
+            .form{
+                .subtitle{
+                    text-align: center;
+                    font-family: $bodoni_moda;
+                    font-size: scaleVW(37.5, $desktop);
+                    line-height: LH(45, 37.5);
+                    color: $dark;
+                    font-weight: 600;
+                    max-width: scaleVW(1141.6425, $desktop);
+                    margin: 0 auto;
+                    margin-bottom: scaleVW(20, $desktop);
+                    @media(max-width:768px){
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        margin-bottom: scaleVW(10, $movil);
+                    }
+                }
+                .intro{
+                    text-align: center;
+                    font-family: $bodoni_book;
+                    font-size: scaleVW(28, $desktop);
+                    line-height: LH(27.6, 28);
+                    color: $dark;
+                    max-width: scaleVW(1141.6425, $desktop);
+                    margin: 0 auto;
+                    margin-bottom: scaleVW(50, $desktop);
+                    @media(max-width:768px){
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        margin-bottom: scaleVW(20, $movil);
+                    }
+                }
+                .tetra-h3{
+                    @media(max-width:768px){
+                        margin: 0;
+                    }
+                }
+                .w3-content{
+                    width: 100%;
+                    max-width: scaleVW(1141.6425, $desktop);
+                    margin: 0 auto;
+                    background-color: transparent !important;
+                    border-radius: none !important;
+                    font-family: $bodoni_book;
+                    font-size: scaleVW(28, $desktop);
+                    line-height: LH(27.6, 28);
+                    color: $dark;
+                    margin-bottom: scaleVW(10, $desktop);
+                    @media(max-width:768px){
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        margin-top:scaleVW(15, $movil);
+                        padding: 0 !important;
+                    }
+                    .tetra-font{
+                        .w3-half{
+                            input{
+                                width: 100%;
+                                font-family: $bodoni_book;
+                                padding: 0 scaleVW(7, $desktop);
+                                font-size: scaleVW(28, $desktop);
+                                line-height: LH(27.6, 28);
+                                color: $dark;
+                                background-color: transparent !important;
+                                border: none !important;
+                                outline: none;
+                                border-bottom: 1px solid $dark !important;
+                                border-radius: 0 !important;
+                                box-sizing: border-box;
+                                @media(max-width:768px){
+                                    padding: scaleVW(15, $movil) !important;
+                                    font-size: scaleVW(16, $movil);
+                                    line-height: LH(19.2, 16);
+                                    border-radius: scaleVW(5, $movil);
+                                }
+                            }
+                        }
+                    }
+                    .tabcontent2{
+                        input{
+                            width: 100%;
+                            font-family: $bodoni_book;
+                            padding: 0 scaleVW(7, $desktop);
+                            font-size: scaleVW(28, $desktop);
+                            line-height: LH(27.6, 28);
+                            color: $dark;
+                            background-color: transparent !important;
+                            border: none !important;
+                            outline: none;
+                            border-bottom: 1px solid $dark !important;
+                            border-radius: 0 !important;
+                            box-sizing: border-box;
+                            @media(max-width:768px){
+                                padding: scaleVW(15, $movil);
+                                font-size: scaleVW(16, $movil);
+                                line-height: LH(19.2, 16);
+                                border-radius: scaleVW(5, $movil);
+                            }
+                        }
+                    }
+                    .tetra-font, .tabcontent2{
+                        border: none !important;
+                        padding: 0 !important;
+                        box-sizing: border-box;
+                        select{
+                            width: 100%;
+                            font-family: $bodoni_book;
+                            padding: 0 scaleVW(7, $desktop);
+                            font-size: scaleVW(28, $desktop);
+                            line-height: LH(27.6, 28);
+                            color: $dark;
+                            background-color: transparent !important;
+                            border: none !important;
+                            outline: none;
+                            border-bottom: 1px solid $dark !important;
+                            border-radius: 0 !important;
+                            box-sizing: border-box;
+                            @media(max-width:768px){
+                                padding: 0 scaleVW(15, $movil);
+                                font-size: scaleVW(16, $movil);
+                                line-height: LH(19.2, 16);
+                                border-radius: scaleVW(5, $movil);
+                            }
+                        }
+                        label{
+                            font-family: $bodoni_book;
+                            font-size: scaleVW(28, $desktop);
+                            line-height: LH(27.6, 28);
+                            color: $dark;
+                            margin-bottom: scaleVW(10, $desktop);
+                            @media(max-width:768px){
+                                font-size: scaleVW(16, $movil);
+                                line-height: LH(19.2, 16);
+                                margin-top:scaleVW(15, $movil);
+                            }
+                        }
+                    }
+                }
+                .w3-row-padding{
+                    @media(max-width:768px){
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: scaleVW(5, $movil);
+                        input{
+                            width: 100%;
+                            font-family: $bodoni_book;
+                            padding: 0 scaleVW(7, $desktop);
+                            font-size: scaleVW(28, $desktop);
+                            line-height: LH(27.6, 28);
+                            color: $dark;
+                            background-color: transparent !important;
+                            border: none !important;
+                            outline: none;
+                            border-bottom: 1px solid $dark !important;
+                            border-radius: 0 !important;
+                            box-sizing: border-box;
+                            @media(max-width:768px){
+                                padding: scaleVW(15, $movil) !important;
+                                font-size: scaleVW(16, $movil);
+                                line-height: LH(19.2, 16);
+                                border-radius: scaleVW(5, $movil);
+                            }
+                        }
+                    }
+                }
+                .w3-center{
+                    p{
+                        button{
+                            @include ctaStyle;
+                            padding:0 !important;
+                            border-radius: scaleVW(30, $desktop);
+                            background-color: #373a36 !important;
+                            @media(max-width:768px){
+                                width: scaleVW(191.329, $movil);
+                                height: scaleVW(38.3313, $movil);
+                                font-size: scaleVW(20, $movil) !important;
+                                margin-top: scaleVW(20, $movil) !important;
+                            }
+                        }
+                    }
+                }
+            }
+            // Result
+            .w3-container{
+                max-width: scaleVW(1450, $desktop);
+                border-radius: 5px !important;
+                text-align:center;
+                #myPrint{
+                    #TETRA_CHART{
+                        width: 100%;
+                        margin: 0 !important;
+                        #link{
+                            display: flex;
+                            justify-content: center;
+                            align-items:center;
+                            canvas{
+                                width: scaleVW(750, $desktop);
+                            }
+                        }
+                    }
+                }
+                .w3-content{
+                    div{
+                        height: auto;
+                        display:flex;
+                        flex-direction:column;
+                        justify-content:center;
+                        br{
+                            display:none;
+                        }
+                        a{
+                            display: flex;
+                            text-decoration: none;
+                            margin: 0 auto;
+                            .material-icons{
+                                font-size: 2vw !important;
+                                color: $dark !important;
+                            }
+                        }
+                    }
+                }
+                @media(max-width:768px){
+                    .tetra-font-mobile {
+                        font-size: scaleVW(12, $movil) !important;
+                        line-height: LH(19.2, 12);
+                    }
+                }
+            }
+            .w3-table th:first-child, .w3-table td:first-child, .w3-table-all th:first-child, .w3-table-all td:first-child{
+                @media(max-width:768px){
+                    padding: 0 scaleVW(10, $movil) !important;
+                }
+            }
+            center, font{
+                color: $dark !important;
+            }
+            center{
+                margin-bottom: 3vw;
+                @media(max-width:768px){
+                    img{
+                        width: scaleVW(100, $movil);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.instagram-partial-2d0893 {
+    background: $gray_light;
+    padding-bottom: scaleVW(103.6656, $desktop);
+    @media(max-width:768px){
+        padding-bottom: scaleVW(60, $movil);
+    }
+    .content-intagram{
+        @include maxWidth;
+        .title-and-link{
+            display: flex;
+            align-items: center;
+            gap: scaleVW(45.7862, $desktop);
+            margin-bottom: scaleVW(41.0328, $desktop);
+            h2{
+                margin: 0;
+                width: fit-content;
+                font-size: scaleVW(104.42, $desktop);
+                line-height: LH(125.3, 1104.42);
+                font-family: $bodoni_book;
+                color: $dark;
+            }
+            a{
+                @include seeMore;
+                span{
+                    font-size: scaleVW(56.74, $desktop);
+                    line-height: LH(68.09, 56.74);
+                }
+            }
+            @media(max-width:768px){
+                margin-bottom: scaleVW(15, $movil);
+                justify-content: space-between;
+                h2{
+                    font-size: scaleVW(35, $movil);
+                    line-height: LH(42, 35);
+                }
+                a{
+                    span{
+                        font-size: scaleVW(21.66, $movil);
+                        line-height: LH(25.99, 21.66);
+                    }
+                }
+            }
+        }
+    }
+}
