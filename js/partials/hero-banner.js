@@ -1,7 +1,7 @@
 // JS for partial: hero-banner\n
 $(()=>{
     $('.hero-banner-partial-d9ee41').owlCarousel({
-        autoplay:true,
+        autoplay:false,
         loop:true,
         items:1,
         nav:false,

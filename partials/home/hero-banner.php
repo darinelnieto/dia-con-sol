@@ -37,6 +37,9 @@ wp_enqueue_script(
                     )) ?>
                 <?php else: ?>
                     <h2 class="title" style="color:<?= $item['text_color']; ?>"><?= $item['banner_text']; ?></h2>
+                    <?php if(!empty($item['description'])): ?>
+                        <p class="description" style="color:<?= $item['text_color']; ?>"><?= $item['description']; ?></p>
+                    <?php endif; ?>
                 <?php endif; if($item['cta']): $cta = $item['cta']; ?>
                     <a href="<?= $cta['url']; ?>" target="<?= $cta['target']; ?>" class="the-cta <?= $item['cta_style']; ?>">
                         <?= $cta['title']; ?>

@@ -24,27 +24,42 @@
             max-width: scaleVW(730.3728, $desktop);
             display: flex;
             flex-direction: column;
-            gap: scaleVW(146.0826, $desktop);
+            // gap: scaleVW(146.0826, $desktop);
             @media(max-width:768px){
                 top: inherit;
                 transform: translateX(-50%);
                 bottom: scaleVW(50.2956, $movil);
-                max-width: scaleVW(261.0098, $movil);
+                max-width: scaleVW(290, $movil);
+                width:100%;
+                text-align:center;
             }
             .title{
                 font-family: $bodoni_book;
-                min-height: scaleVW(137.3216, $desktop);
+                // min-height: scaleVW(137.3216, $desktop);
                 font-size: scaleVW(60.96, $desktop);
                 line-height: LH(39.15, 60.96);
+                text-align: center;
                 @media(max-width:768px){
-                    min-height: scaleVW(42.6547, $movil);
+                    // min-height: scaleVW(42.6547, $movil);
                     font-size: scaleVW(18.93, $movil);
                     line-height: LH(17.75, 18.93);
+                }
+            }
+            .description{
+                font-family: $bodoni_book;
+                font-size: scaleVW(41.46, $desktop);
+                line-height: LH(41.59, 41.46);
+                margin:0;
+                text-align: center;
+                @media(max-width:768px){
+                    font-size: scaleVW(16, $movil);
+                    line-height: LH(17.75, 16);
                 }
             }
             .text-image{
                 width: scaleVW(550.9632, $desktop);
                 height: scaleVW(194.0291, $desktop);
+                margin: 0 auto;
                 @media(max-width:768px){
                     width: scaleVW(211.8237, $movil);
                     height: scaleVW(74.5966, $movil);
@@ -52,6 +67,7 @@
             }
             .the-cta{
                 @include ctaStyle;
+                margin-top: scaleVW(146.0826, $desktop);
             }
             .border-gold{
                 color: $dark;
@@ -66,8 +82,11 @@
                 background: $dark;
                 color: $gray_light;
                 border-radius: scaleVW(31, $desktop);
+                width: max-content;
+                padding: 0 scaleVW(20, $desktop);
                 @media(max-width:768px){
                     border-radius: scaleVW(30, $movil);
+                    padding: scaleVW(15, $movil) scaleVW(20, $movil);
                 }
             }
         }
