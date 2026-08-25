@@ -257,6 +257,7 @@
                 border-radius: 5px !important;
                 text-align:center;
                 #myPrint{
+                    font-family: $bodoni_moda !important;
                     #TETRA_CHART{
                         width: 100%;
                         margin: 0 !important;
@@ -265,7 +266,8 @@
                             justify-content: center;
                             align-items:center;
                             canvas{
-                                width: scaleVW(750, $desktop);
+                                max-width: scaleVW(750, $desktop);
+                                margin: 0 auto;
                             }
                         }
                     }
