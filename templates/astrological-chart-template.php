@@ -1,4 +1,12 @@
 <?php
+$script_handle = 'about-js';
+wp_enqueue_script(
+    $script_handle,
+    get_template_directory_uri() . '/js/partials-min/about.min.js',
+    array('jquery'),
+    null,
+    true
+);
 /**
  * 
  * Template Name: astrological-chart
