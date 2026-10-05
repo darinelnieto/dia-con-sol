@@ -36,13 +36,13 @@
             margin: 0 auto;
             position: relative;
             z-index: 1;
-            @media(max-width:768px){
-                max-width: scaleVW(360, $movil);
-            }
             .main-content{
                 text-align: center;
                 max-width: scaleVW(1141.6425, $desktop);
                 margin: 0 auto;
+                @media(max-width: 768px){
+                    max-width: scaleVW(360, $movil);
+                }
                 h1{
                     font-family: $bodoni_moda;
                     font-size: scaleVW(82, $desktop);
@@ -83,6 +83,7 @@
                         font-size: scaleVW(16, $movil);
                         line-height: LH(19.2, 16);
                         margin-bottom: scaleVW(10, $movil);
+                        max-width: scaleVW(360, $movil);
                     }
                 }
                 .intro{
@@ -98,6 +99,7 @@
                         font-size: scaleVW(16, $movil);
                         line-height: LH(19.2, 16);
                         margin-bottom: scaleVW(20, $movil);
+                        max-width: scaleVW(360, $movil);
                     }
                 }
                 .tetra-h3{
@@ -121,6 +123,7 @@
                         line-height: LH(19.2, 16);
                         margin-top:scaleVW(15, $movil);
                         padding: 0 !important;
+                        max-width: scaleVW(360, $movil);
                     }
                     .tetra-font{
                         .w3-half{
@@ -256,6 +259,9 @@
                 max-width: scaleVW(1450, $desktop);
                 border-radius: 5px !important;
                 text-align:center;
+                @media(max-width:768px){
+                    max-width: scaleVW(360, $movil);            
+                }
                 #myPrint{
                     font-family: $bodoni_moda !important;
                     #TETRA_CHART{
@@ -268,6 +274,9 @@
                             canvas{
                                 max-width: scaleVW(750, $desktop);
                                 margin: 0 auto;
+                                @media(max-width:768px){
+                                    max-width: 100%;            
+                                }
                             }
                         }
                     }
@@ -278,9 +287,6 @@
                         display:flex;
                         flex-direction:column;
                         justify-content:center;
-                        // br{
-                        //     display:none;
-                        // }
                         a{
                             display: flex;
                             text-decoration: none;
@@ -317,7 +323,61 @@
             }
         }
     }
+    #TETRA_ASTRO_REPORT{
+        td{
+            padding: 5px 0;
+            font-size: scaleVW(18, $desktop);
+            line-height: LH(24.6, 18);
+            @media(max-width:768px){
+                font-size: scaleVW(16, $movil);
+                line-height: LH(19.2, 16);
+            }
+            b{
+                text-align: left !important;
+                font-weight: 700;
+                font-size: scaleVW(28, $desktop);
+                line-height: LH(27.6, 28);
+                margin: scaleVW(20, $desktop) 0 scaleVW(0, $desktop) 0;
+                display: block;
+                @media(max-width:768px){
+                    font-size: scaleVW(16, $movil);
+                    line-height: LH(19.2, 16);
+                    margin: scaleVW(15, $movil) 0 0 0;
+                }
+            }
+        }
+        tr{
+            border: none;
+        }
+    }
+    .left-content{
+        #TETRA_ELEMENTS{
+            td{
+                padding: 5px 0;
+                h3{
+                    text-align: left !important;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: scaleVW(18, $desktop);
+                    line-height: LH(24.6, 18);
+                    @media(max-width:768px){
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                    }
+                }
+            }
+            tr{
+                border: none;
+            }
+        }
+    }
     #link{
         pointer-events: none;
+    }
+    h3, .tetra-h2{
+        @media(max-width: 768px){
+            font-size: 1.525em !important;
+        }
     }
 }
